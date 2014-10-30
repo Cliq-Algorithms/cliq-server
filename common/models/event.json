@@ -1,0 +1,44 @@
+{
+  "name": "event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "maxSize": {
+      "type": "number",
+      "required": true
+    },
+    "owner": {
+      "type": "user",
+      "required": true
+    },
+    "attendees": {
+      "type": [
+        "user"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

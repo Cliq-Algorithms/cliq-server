@@ -1,0 +1,23 @@
+{
+  "name": "ratings",
+  "plural": "ratings",
+  "base": "PersistedModel",
+  "properties": {
+    "rating": {
+      "type": "number",
+      "required": true
+    },
+    "rater": {
+      "type": "user",
+      "required": true
+    },
+    "ratee": {
+      "type": "user",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,36 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "PersistedModel",
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "radius": {
+      "type": "number"
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "ranking": {
+      "type": "number",
+      "required": true
+    },
+    "opinions": {
+      "type": [
+        "ratings"
+      ]
+    },
+    "events": {
+      "type": [
+        "event"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

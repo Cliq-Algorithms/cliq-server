@@ -25,5 +25,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ratings": {
+    "dataSource": "db",
+    "public": true
   }
 }
