@@ -1,7 +1,7 @@
 {
   "name": "user",
   "plural": "users",
-  "base": "PersistedModel",
+  "base": "User",
   "properties": {
     "name": {
       "type": "string",
