@@ -17,7 +17,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "rater": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+    },
+    "ratee": {
+        "type": "belongsTo",
+        "model": "ratings",
+        "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": []
 }
