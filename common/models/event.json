@@ -2,6 +2,9 @@
   "name": "event",
   "plural": "events",
   "base": "PersistedModel",
+  "mongodb": {
+    "collection": "EventCollection"
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -38,7 +41,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
+  "dataSource": "mongodb",
   "methods": []
 }

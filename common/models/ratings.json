@@ -2,6 +2,9 @@
   "name": "ratings",
   "plural": "ratings",
   "base": "PersistedModel",
+  "mongodb": {
+    "collection": "RatingCollection"
+  },
   "properties": {
     "rating": {
       "type": "number",
@@ -19,16 +22,17 @@
   "validations": [],
   "relations": {
     "rater": {
-        "type": "belongsTo",
-        "model": "user",
-        "foreignKey": "userId"
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
     },
     "ratee": {
-        "type": "belongsTo",
-        "model": "ratings",
-        "foreignKey": "userId"
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
     }
   },
   "acls": [],
+  "dataSource": "mongodb",
   "methods": []
 }
