@@ -6,10 +6,6 @@
     "collection": "UserCollection"
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "radius": {
       "type": "number"
     },
