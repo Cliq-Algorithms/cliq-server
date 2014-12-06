@@ -6,7 +6,7 @@
   "mongodb": {
     "name": "mongodb",
     "connector": "mongodb",
-     "host": "127.0.0.1",
+    "url": "mongodb://cliq:uiuccs196@ds061200.mongolab.com:61200/cliq",
     "database": "devDB",
     "port": 27017
   }
