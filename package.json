@@ -3,7 +3,7 @@
   "description": "A social media app that allows users to find local events posted by other users.  The app also includes reccomendations based on past events and ratings of every user based on other useres they attended prior events with",
   "repository": "https://github.com/cliq-cs196",
   "version": "0.2.0",
-  "README","DOES NOT EXIST YET",
+  "README":"DOES NOT EXIST YET",
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint ."
